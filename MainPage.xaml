@@ -21,5 +21,10 @@
             <RadioButton x:Name="pollingButton" Checked="radioButton_Checked">Polling</RadioButton>
             <RadioButton x:Name="pauseButton" Checked="radioButton_Checked">Pause</RadioButton>
         </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <RadioButton x:Name="resetButton" Checked="radioButton_Checked" IsChecked="True">Interrupts</RadioButton>
+            <RadioButton x:Name="runButton" Checked="radioButton_Checked">Polling</RadioButton>
+            <RadioButton x:Name="setButton" Checked="radioButton_Checked">Pause</RadioButton>
+        </StackPanel>
     </StackPanel>
 </Page>

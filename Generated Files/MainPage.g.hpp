@@ -68,19 +68,40 @@ void ::GpioOneWire::MainPage::Connect(int __connectionId, ::Platform::Object^ __
             break;
         case 8:
             {
+                this->resetButton = safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(this->resetButton))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GpioOneWire::MainPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::radioButton_Checked);
+            }
+            break;
+        case 9:
+            {
+                this->runButton = safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(this->runButton))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GpioOneWire::MainPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::radioButton_Checked);
+            }
+            break;
+        case 10:
+            {
+                this->setButton = safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(this->setButton))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GpioOneWire::MainPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::radioButton_Checked);
+            }
+            break;
+        case 11:
+            {
                 this->interruptButton = safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(this->interruptButton))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GpioOneWire::MainPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::radioButton_Checked);
             }
             break;
-        case 9:
+        case 12:
             {
                 this->pollingButton = safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(this->pollingButton))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GpioOneWire::MainPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&MainPage::radioButton_Checked);
             }
             break;
-        case 10:
+        case 13:
             {
                 this->pauseButton = safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::RadioButton^>(this->pauseButton))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::GpioOneWire::MainPage::*)

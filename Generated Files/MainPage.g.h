@@ -39,6 +39,9 @@ namespace GpioOneWire
         private: ::Windows::UI::Xaml::Controls::TextBlock^ temperatureText;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ reliabilityText;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ statusText;
+        private: ::Windows::UI::Xaml::Controls::RadioButton^ resetButton;
+        private: ::Windows::UI::Xaml::Controls::RadioButton^ runButton;
+        private: ::Windows::UI::Xaml::Controls::RadioButton^ setButton;
         private: ::Windows::UI::Xaml::Controls::RadioButton^ interruptButton;
         private: ::Windows::UI::Xaml::Controls::RadioButton^ pollingButton;
         private: ::Windows::UI::Xaml::Controls::RadioButton^ pauseButton;
