@@ -1,4 +1,8 @@
-﻿# sensors4rpi
+﻿# [sensors4rpi](https://github.com/qitas/sensors4rpi) 
+
+### qitas@qitas.cn
+
+---
 
 ## 描述
 
@@ -8,7 +12,11 @@ sensors4rpi是树莓派的各种传感器应用，特别是摄像头的应用
 
 ## 组成
 
-- windowIoT
+- sensor
+
+各种驱动外设的代码
+
+- winIoT
 
 基于window IoT系统工程文件示例
 
